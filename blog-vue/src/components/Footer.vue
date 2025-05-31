@@ -8,14 +8,12 @@
 
 <style scoped>
 .footer {
-  background-color: #ffffff;
-  color: #888;
+  background-color: black;
+  color: white;
   text-align: center;
   padding: 2rem 0;
   margin-top: 4rem;
   font-size: 0.9rem;
-  border-top: 1px solid #eaeaea;
-  box-shadow: 0 -2px 10px rgba(105, 103, 103, 0.77);
 }
 </style>
 

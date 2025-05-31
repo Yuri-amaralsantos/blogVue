@@ -1,31 +1,99 @@
 <template>
   <header class="header">
-    <div class="container">
-      <h1>Bem-vindo ao Blog</h1>
-      <p>Dicas, tutoriais e ideias!</p>
+    <div class="branding">
+      <h1 class="logo">CNET</h1>
+      <span class="subtitle">YOUR GUIDE TO A BETTER FUTURE</span>
+    </div>
+
+    <div class="actions">
+      <button class="search-button">
+        <svg class="icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M11 17a6 6 0 100-12 6 6 0 000 12z" />
+        </svg>
+      </button>
+      <button class="login-button">
+        Join/Login
+      </button>
     </div>
   </header>
 </template>
 
+
 <style scoped>
 .header {
-  background: linear-gradient(135deg, #0d6efd, #0dcaf0);
+  background-color: black;
   color: white;
-  padding: 3rem 1rem;
-  text-align: center;
-  border-radius: 0 0 16px 16px;
-  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  padding: 1rem 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 50;
 }
 
-.header h1 {
-  margin: 0;
-  font-size: 2.5rem;
-  font-weight: 700;
+.branding {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
-.header p {
-  margin-top: 0.5rem;
-  font-size: 1.1rem;
-  opacity: 0.9;
+.logo {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #dc2626; /* Tailwind's red-600 */
+}
+
+.subtitle {
+  display: none;
+  font-size: 0.75rem;
+  color:rgb(211, 214, 219); /* Tailwind's gray-400 */
+}
+
+@media (min-width: 640px) {
+  .subtitle {
+    display: inline;
+  }
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.search-button {
+  background: none;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+  padding:0.5rem;
+  border-radius:10px;
+}
+
+.search-button:hover {
+  border-color: #4ade80; 
+  background-color: #4ade80; ;
+  color:rgb(70, 67, 67);
+}
+
+.icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.login-button {
+  background-color: #4ade80; /* Tailwind's green-400 */
+  color: black;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #22c55e; /* Tailwind's green-500 */
 }
 </style>
