@@ -31,7 +31,7 @@ const items = [
   background-color: #fef08a;
   padding: 1rem;
   border-radius: 12px;
-  margin: 1rem 0;
+  margin: 1rem 2rem;
 }
 
 .highlight {
@@ -57,7 +57,6 @@ const items = [
 
 .items {
   display: flex;
-  gap: 1rem;
   flex: 1;
   flex-wrap: wrap;
   align-items: center;
@@ -65,16 +64,18 @@ const items = [
 
 .item {
   border-left: 1px dashed #aaa;
-  padding-left: 1rem;
+  border-right: 1px dashed #aaa;
+  padding: 2rem;
 }
 
 .item a {
-  font-weight: bold;
+  font-size: 12px;
   text-decoration: none;
   color: black;
 }
 
 .arrow {
+  margin-left: 2rem;
   background-color: #a7f3d0;
   border-radius: 8px;
   padding: 0.5rem;
@@ -85,5 +86,16 @@ const items = [
   border: none;
   font-size: 1.25rem;
   cursor: pointer;
+  color: black;
+  /* cor padrão */
+}
+
+.arrow:hover {
+  background: black;
+}
+
+.arrow:hover button {
+  color: #4ade80;
+  /* seta verde no hover */
 }
 </style>

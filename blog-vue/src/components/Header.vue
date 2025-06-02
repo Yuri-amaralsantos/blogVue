@@ -1,8 +1,8 @@
 <template>
   <header class="header">
     <div class="branding">
-      <h1 class="logo">CNET</h1>
-      <span class="subtitle">YOUR GUIDE TO A BETTER FUTURE</span>
+      <h1 class="logo">TECH</h1>
+      <span class="subtitle">SEU<br> ESPAÇO <br> PARA A <br>TECNLOGIA </span>
     </div>
 
     <div class="actions">
@@ -22,32 +22,31 @@
 <style scoped>
 .header {
   background-color: black;
-  color: white;
   display: flex;
   align-items: center;
-  justify-content: space-between; 
-  padding: 1rem 0;
-  position: sticky;
-  top: 0;
-  z-index: 50;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  position: relative;
 }
 
 .branding {
+  margin-left: 2rem;
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
 .logo {
-  font-size: 3rem;
+  font-size: 5rem;
   font-weight: 800;
-  color: #dc2626; /* Tailwind's red-600 */
+  color: #dc2626;
 }
 
 .subtitle {
   display: none;
-  font-size: 0.75rem;
-  color:rgb(211, 214, 219); /* Tailwind's gray-400 */
+  font-size: 1rem;
+  font-weight: bolder;
+  color: #dc2626;
 }
 
 @media (min-width: 640px) {
@@ -67,14 +66,15 @@
   border: 1px solid white;
   color: white;
   cursor: pointer;
-  padding:0.5rem;
-  border-radius:10px;
+  padding: 0.5rem;
+  border-radius: 10px;
 }
 
 .search-button:hover {
-  border-color: #4ade80; 
-  background-color: #4ade80; ;
-  color:rgb(70, 67, 67);
+  border-color: #4ade80;
+  background-color: #4ade80;
+  ;
+  color: rgb(70, 67, 67);
 }
 
 .icon {
@@ -83,7 +83,8 @@
 }
 
 .login-button {
-  background-color: #4ade80; /* Tailwind's green-400 */
+  background-color: #4ade80;
+  /* Tailwind's green-400 */
   color: black;
   padding: 0.75rem 1rem;
   border-radius: 0.5rem;
@@ -94,6 +95,7 @@
 }
 
 .login-button:hover {
-  background-color: #22c55e; /* Tailwind's green-500 */
+  background-color: #22c55e;
+  /* Tailwind's green-500 */
 }
 </style>

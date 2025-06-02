@@ -20,7 +20,7 @@ const topics = [
 
 <style scoped>
 .popular-topics {
-  padding: 2rem 0;
+  padding: 2rem 2rem;
 }
 
 .popular-topics h2 {
@@ -36,12 +36,19 @@ const topics = [
 }
 
 .popular-topics button {
+  font-weight: bolder;
   background-color: white;
   color: #8b5cf6;
-  border: 1px solid #ddd;
-  padding: 0.5rem 1rem;
+  border: 1px solid #b49cee;
+  padding: 0.8rem 1rem;
   border-radius: 8px;
-  font-weight: 500;
   cursor: pointer;
+}
+
+.popular-topics button:hover {
+  background-color: #4ade80;
+  color: black;
+  border: 1px solid #4ade80;
+
 }
 </style>

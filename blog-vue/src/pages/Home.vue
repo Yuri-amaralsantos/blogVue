@@ -1,92 +1,51 @@
 <template>
   <div class="home">
-    <div class="hero">
-      <Header />
-      <Navbar />
-    </div>
+
 
     <section class="featured-articles">
-      <h2>Principais Artigos</h2>
 
-      <div class="main-article">
-        <FeaturedArticleCard
-          :title="articles[0].title"
-          :summary="articles[0].summary"
-          :date="articles[0].date"
-        />
+      <div class="mainArticle">
+        <FeaturedArticleCard :title="articles[0].title" :summary="articles[0].summary" :date="articles[0].date" />
       </div>
 
       <div class="articles-grid">
-        <ArticleCard
-          v-for="article in articles.slice(1)"
-          :key="article.id"
-          :title="article.title"
-          :summary="article.summary"
-          :date="article.date"
-        />
+        <ArticleCard v-for="article in articles.slice(1, 5)" :key="article.id" :id="article.id" :title="article.title"
+          :date="article.date" />
       </div>
     </section>
 
     <BestOfTheBest />
+
+    <hr class="dotted-separator" />
+
+    <h2>Tech</h2>
+    <div class="articles-grid">
+      <ArticleCard v-for="article in articles.slice(5, 9)" :key="article.id" :title="article.title"
+        :summary="article.summary" :date="article.date" />
+    </div>
+
     <PopularTopics />
 
     <hr class="dotted-separator" />
 
-    <div class="articles-grid">
-        <ArticleCard
-          v-for="article in articles.slice(1)"
-          :key="article.id"
-          :title="article.title"
-          :summary="article.summary"
-          :date="article.date"
-        />
-      </div>
+    <h2>Todos Artigos</h2>
+    <PaginatedArticles :articles="articles" />
 
-    <Footer />
+
+
   </div>
 </template>
 
 <script setup lang="ts">
-import Header from '../components/Header.vue'
-import Navbar from '../components/Navbar.vue'
-import Footer from '../components/Footer.vue'
+
 import ArticleCard from '../components/ArticleCard.vue'
 import FeaturedArticleCard from '../components/FeaturedArticleCard.vue'
 import BestOfTheBest from '../components/BestOfTheBest.vue'
 import PopularTopics from '../components/PopularTopics.vue'
+import PaginatedArticles from '../components/PaginatedArticles.vue'
+import articlesData from '../data/articles.json'
 
-const articles = [
-  {
-    id: 1,
-    title: "IA médica supera especialistas em diagnósticos",
-    summary: "Nova IA acerta mais que humanos em exames clínicos. Início de uma nova era na medicina.",
-    date: "2025-05-30"
-  },
-  {
-    id: 2,
-    title: "6G promete internet 100x mais rápida",
-    summary: "Primeiros testes mostram velocidades nunca vistas antes em redes móveis.",
-    date: "2025-05-29"
-  },
-  {
-    id: 3,
-    title: "Startups verdes atraem bilhões em 2025",
-    summary: "Soluções ecológicas estão ganhando o mercado com força.",
-    date: "2025-05-28"
-  },
-  {
-    id: 4,
-    title: "Realidade mista revoluciona o ensino",
-    summary: "Salas de aula imersivas são testadas em universidades brasileiras.",
-    date: "2025-05-27"
-  },
-  {
-    id: 5,
-    title: "Fusão nuclear mais próxima de se tornar viável",
-    summary: "Pesquisadores atingem novo marco de eficiência energética.",
-    date: "2025-05-26"
-  }
-]
+const articles = articlesData
 </script>
 
 <style scoped>
@@ -96,32 +55,37 @@ const articles = [
   flex-direction: column;
 }
 
-.featured-articles {
-  padding-top: 2rem ;
-  background-color: black;
+.mainArticle {
+  background: black;
+  padding-top: 2rem;
+}
+
+h2 {
+  margin: 0 2rem;
 }
 
 .featured-articles h2 {
-  margin-top:0;
+  margin-top: 0;
   font-size: 1.75rem;
   margin-bottom: 1.5rem;
   font-weight: bold;
   color: white;
 }
 
-.main-article {
-  margin-bottom: 0.5remrem;
-}
 
 .articles-grid {
+  background: white;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 0.2rem;
+  padding: 2rem;
 }
 
 .dotted-separator {
   border: none;
-  border-bottom: 1px dotted #999; /* Cor e estilo da linha */
-  margin: 2rem 0; /* Espaçamento horizontal e vertical */
+  border-bottom: 1px dotted #999;
+  /* Cor e estilo da linha */
+  margin: 2rem 2rem;
+  /* Espaçamento horizontal e vertical */
 }
 </style>

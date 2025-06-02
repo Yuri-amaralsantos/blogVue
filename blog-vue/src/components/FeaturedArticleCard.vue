@@ -26,6 +26,8 @@ defineProps<{
   border-top-right-radius: 1rem;
   font-size: 1.1rem;
   margin-bottom: 0.2rem;
+  margin-left:2rem;
+  margin-right:2rem;
 }
 
 .image-container {

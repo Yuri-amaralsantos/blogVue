@@ -39,12 +39,13 @@
 
 <style scoped>
 .nav {
+  position: relative;
   background-color: black;
   display: flex;
   gap: 18px;
   align-items: center;
   justify-content: space-evenly;
-  position: relative;
+  
 }
 
 .nav a {

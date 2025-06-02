@@ -1,5 +1,5 @@
 <template>
-  <div class="article-card">
+  <router-link :to="`/article/${id}`" class="article-card">
     <div class="image-container">
       <img src="/image.png" alt="Article image" class="article-image" />
     </div>
@@ -7,13 +7,14 @@
       <a href="">{{ title }}</a>
       <span class="date">{{ date }}</span>
     </div>
-  </div>
+  </router-link>
 </template>
 
 <script setup lang="ts">
 defineProps<{
-  title: string
-  date: string
+  id: number,
+  title: string,
+  date: string,
 }>()
 </script>
 
@@ -63,11 +64,13 @@ defineProps<{
 
 .article-card:hover a {
   text-decoration: underline;
+  color: #8b5cf6;
 }
 
 .date {
   font-size: 0.8rem;
   color: #9ca3af;
-  margin-top: auto; /* fixa no final do bloco de texto */
+  margin-top: auto;
+  /* fixa no final do bloco de texto */
 }
 </style>
