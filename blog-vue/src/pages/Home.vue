@@ -27,6 +27,21 @@
       </div>
     </section>
 
+    <BestOfTheBest />
+    <PopularTopics />
+
+    <hr class="dotted-separator" />
+
+    <div class="articles-grid">
+        <ArticleCard
+          v-for="article in articles.slice(1)"
+          :key="article.id"
+          :title="article.title"
+          :summary="article.summary"
+          :date="article.date"
+        />
+      </div>
+
     <Footer />
   </div>
 </template>
@@ -37,6 +52,8 @@ import Navbar from '../components/Navbar.vue'
 import Footer from '../components/Footer.vue'
 import ArticleCard from '../components/ArticleCard.vue'
 import FeaturedArticleCard from '../components/FeaturedArticleCard.vue'
+import BestOfTheBest from '../components/BestOfTheBest.vue'
+import PopularTopics from '../components/PopularTopics.vue'
 
 const articles = [
   {
@@ -80,8 +97,6 @@ const articles = [
 }
 
 .featured-articles {
-  padding-left: 2rem ;
-  padding-right: 2rem ;
   padding-top: 2rem ;
   background-color: black;
 }
@@ -102,5 +117,11 @@ const articles = [
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 0.2rem;
+}
+
+.dotted-separator {
+  border: none;
+  border-bottom: 1px dotted #999; /* Cor e estilo da linha */
+  margin: 2rem 0; /* Espaçamento horizontal e vertical */
 }
 </style>

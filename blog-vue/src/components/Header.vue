@@ -26,7 +26,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between; 
-  padding: 1rem 1.5rem;
+  padding: 1rem 0;
   position: sticky;
   top: 0;
   z-index: 50;

@@ -1,5 +1,6 @@
 /* main.css ou App.vue */
 body {
+  margin: 0 2rem;
   margin: 0;
   font-family: "Inter", "Segoe UI", "Roboto", sans-serif;
   background-color: white;

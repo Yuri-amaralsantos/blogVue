@@ -1,0 +1,89 @@
+<template>
+  <section class="best-of-the-best">
+    <div class="highlight">
+      <div class="intro">
+        <h3>Best of the<br /><strong>BEST</strong></h3>
+        <p>Editors’ picks and our top buying guides</p>
+      </div>
+      <div class="items">
+        <div class="item" v-for="(item, index) in items" :key="index">
+          <a href="#">{{ item }}</a>
+        </div>
+        <div class="arrow">
+          <button>→</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
+
+<script setup lang="ts">
+const items = [
+  'Here Are the 5 Best VPNs in 2025',
+  'Best Laptops for 2025',
+  'These Are the Best TVs in 2025',
+  'Best Mattresses You Can Buy in 2025'
+]
+</script>
+
+<style scoped>
+.best-of-the-best {
+  background-color: #fef08a;
+  padding: 1rem;
+  border-radius: 12px;
+  margin: 1rem 0;
+}
+
+.highlight {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+.intro {
+  max-width: 200px;
+}
+
+.intro h3 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.intro strong {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.items {
+  display: flex;
+  gap: 1rem;
+  flex: 1;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.item {
+  border-left: 1px dashed #aaa;
+  padding-left: 1rem;
+}
+
+.item a {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.arrow {
+  background-color: #a7f3d0;
+  border-radius: 8px;
+  padding: 0.5rem;
+}
+
+.arrow button {
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+</style>
