@@ -2,7 +2,7 @@
 <template>
     <div class="paginated-articles">
         <div class="articles-grid">
-            <ArticleCard v-for="article in paginatedArticles" :key="article.id" :title="article.title"
+            <ArticleCard v-for="article in paginatedArticles" :id="article.id" :title="article.title"
                 :summary="article.summary" :date="article.date" />
         </div>
 

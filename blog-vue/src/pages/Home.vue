@@ -20,7 +20,7 @@
 
     <h2>Tech</h2>
     <div class="articles-grid">
-      <ArticleCard v-for="article in articles.slice(5, 9)" :key="article.id" :title="article.title"
+      <ArticleCard v-for="article in articles.slice(5, 9)" :id="article.id" :title="article.title"
         :summary="article.summary" :date="article.date" />
     </div>
 
@@ -37,7 +37,8 @@
 </template>
 
 <script setup lang="ts">
-
+import { computed } from 'vue'
+import { defineProps } from 'vue'
 import ArticleCard from '../components/ArticleCard.vue'
 import FeaturedArticleCard from '../components/FeaturedArticleCard.vue'
 import BestOfTheBest from '../components/BestOfTheBest.vue'
@@ -45,8 +46,19 @@ import PopularTopics from '../components/PopularTopics.vue'
 import PaginatedArticles from '../components/PaginatedArticles.vue'
 import articlesData from '../data/articles.json'
 
-const articles = articlesData
+const props = defineProps<{ search: string }>()
+
+const articles = computed(() => {
+  if (!props.search) return articlesData
+
+  const term = props.search.toLowerCase()
+  return articlesData.filter(article =>
+    article.title.toLowerCase().includes(term) ||
+    article.summary.toLowerCase().includes(term)
+  )
+})
 </script>
+
 
 <style scoped>
 .hero {
