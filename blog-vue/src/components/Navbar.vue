@@ -45,7 +45,7 @@
   gap: 18px;
   align-items: center;
   justify-content: space-evenly;
-  
+
 }
 
 .nav a {
@@ -72,6 +72,7 @@
   transform: translateX(-50%);
   background-color: white;
   padding: 10px;
+  border-radius: 5px;
   min-width: 150px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   z-index: 10;
@@ -80,7 +81,7 @@
 .dropdown-menu a {
   padding: 8px 12px;
   white-space: nowrap;
-  color:black;
+  color: black;
 }
 
 .dropdown-menu a:hover {
