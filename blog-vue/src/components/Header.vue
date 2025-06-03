@@ -1,7 +1,9 @@
 <template>
   <header class="header">
     <div class="branding">
-      <h1 class="logo">TECH</h1>
+      <RouterLink to="/" class="logo-link">
+        <h1 class="logo">TECH</h1>
+      </RouterLink>
       <span class="subtitle">SEU<br> ESPAÇO <br> PARA A <br>TECNLOGIA </span>
     </div>
 
@@ -23,13 +25,14 @@
       </button>
 
       <button class="login-button">
-        Join/Login
+        Login
       </button>
     </div>
   </header>
 </template>
 
 <script setup>
+import { RouterLink } from 'vue-router'
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 
@@ -182,6 +185,10 @@ function hideDropdown() {
 .icon {
   width: 1.25rem;
   height: 1.25rem;
+}
+
+.logo-link {
+  text-decoration: none;
 }
 
 .login-button {

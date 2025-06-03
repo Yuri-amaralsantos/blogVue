@@ -2,8 +2,8 @@
   <section class="best-of-the-best">
     <div class="highlight">
       <div class="intro">
-        <h3>Best of the<br /><strong>BEST</strong></h3>
-        <p>Editors’ picks and our top buying guides</p>
+        <h3>Melhor do<br /><strong>MELHOR</strong></h3>
+        <p>Escolhas dos editores e nossos principais guias de compra</p>
       </div>
       <div class="items">
         <div class="item" v-for="(item, index) in items" :key="index">
@@ -19,10 +19,10 @@
 
 <script setup lang="ts">
 const items = [
-  'Here Are the 5 Best VPNs in 2025',
-  'Best Laptops for 2025',
-  'These Are the Best TVs in 2025',
-  'Best Mattresses You Can Buy in 2025'
+  'Aqui estão as 5 melhores VPNs de 2025',
+  'Melhores notebooks para 2025',
+  'Estas são as melhores TVs de 2025',
+  'Melhores colchões que você pode comprar em 2025'
 ]
 </script>
 
@@ -58,14 +58,14 @@ const items = [
 .items {
   display: flex;
   flex: 1;
-  flex-wrap: wrap;
+  flex-direction: row;
   align-items: center;
 }
 
 .item {
   border-left: 1px dashed #aaa;
   border-right: 1px dashed #aaa;
-  padding: 2rem;
+  padding: 0 1.5rem;
 }
 
 .item a {

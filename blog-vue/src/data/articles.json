@@ -1,74 +1,86 @@
 [
   {
     "id": 1,
-    "title": "IA médica supera especialistas em diagnósticos",
-    "summary": "Nova IA acerta mais que humanos em exames clínicos. Início de uma nova era na medicina.",
-    "date": "2025-05-30"
+    "title": "Robôs autônomos transformam a agricultura urbana",
+    "summary": "Tecnologia automatizada aumenta a produção de alimentos nas cidades.",
+    "date": "2025-06-01",
+    "text": "Novos robôs autônomos estão revolucionando a agricultura urbana ao cultivar, colher e monitorar plantações em ambientes controlados. Sensores inteligentes permitem ajustes precisos na irrigação e na nutrição das plantas, aumentando a produtividade e reduzindo o uso de recursos. Esta inovação traz esperança para o abastecimento alimentar sustentável em grandes metrópoles, enfrentando os desafios do crescimento populacional e da escassez de terrenos."
   },
   {
     "id": 2,
-    "title": "6G promete internet 100x mais rápida",
-    "summary": "Primeiros testes mostram velocidades nunca vistas antes em redes móveis.",
-    "date": "2025-05-29"
+    "title": "Cidades inteligentes adotam energia solar integrada",
+    "summary": "Painéis solares embutidos em infraestruturas urbanas aumentam eficiência energética.",
+    "date": "2025-06-02",
+    "text": "Cidades ao redor do mundo estão incorporando painéis solares integrados em ruas, prédios e até calçadas. Essa abordagem inovadora transforma superfícies urbanas em fontes de energia renovável, diminuindo a dependência de combustíveis fósseis. Projetos piloto mostram redução significativa de custos e impacto ambiental, abrindo caminho para metrópoles mais verdes e autossuficientes."
   },
   {
     "id": 3,
-    "title": "Startups verdes atraem bilhões em 2025",
-    "summary": "Soluções ecológicas estão ganhando o mercado com força.",
-    "date": "2025-05-28"
+    "title": "Computação quântica acelera descoberta de medicamentos",
+    "summary": "Novos algoritmos quânticos simulam interações moleculares com alta precisão.",
+    "date": "2025-06-03",
+    "text": "A computação quântica está abrindo novas fronteiras na farmacologia ao permitir simulações detalhadas de moléculas complexas. Isso reduz o tempo e os custos para desenvolver medicamentos eficazes contra doenças difíceis. Pesquisadores já conseguiram prever a eficácia de compostos antes mesmo dos testes laboratoriais, o que pode acelerar tratamentos para câncer e doenças neurodegenerativas."
   },
   {
     "id": 4,
-    "title": "Realidade mista revoluciona o ensino",
-    "summary": "Salas de aula imersivas são testadas em universidades brasileiras.",
-    "date": "2025-05-27"
+    "title": "Novas baterias de estado sólido prometem revolução em veículos elétricos",
+    "summary": "Tecnologia aumenta autonomia e segurança de carros elétricos de próxima geração.",
+    "date": "2025-06-01",
+    "text": "Baterias de estado sólido, que substituem os líquidos inflamáveis das baterias tradicionais, oferecem maior densidade energética e menor risco de incêndios. Fabricantes de veículos elétricos investem pesado nessa inovação para prolongar a autonomia dos carros e reduzir o tempo de recarga. Espera-se que essa tecnologia seja padrão nos veículos produzidos a partir de 2027."
   },
   {
     "id": 5,
-    "title": "Fusão nuclear mais próxima de se tornar viável",
-    "summary": "Pesquisadores atingem novo marco de eficiência energética.",
-    "date": "2025-05-26"
+    "title": "Exploração espacial comercial avança com turismo lunar",
+    "summary": "Primeiras missões privadas para a Lua preparam caminho para turismo espacial.",
+    "date": "2025-06-02",
+    "text": "Empresas privadas estão finalizando os preparativos para enviar turistas à Lua em missões comerciais. Utilizando foguetes reutilizáveis e módulos de pouso inovadores, essas viagens prometem experiências únicas e seguras. O turismo lunar pode impulsionar a economia espacial e fomentar pesquisas científicas em ambientes extraterrestres."
   },
   {
     "id": 6,
-    "title": "IA médica supera especialistas em diagnósticos",
-    "summary": "Nova IA acerta mais que humanos em exames clínicos. Início de uma nova era na medicina.",
-    "date": "2025-05-30"
+    "title": "Redes neurais geram arte digital original em tempo real",
+    "summary": "Inteligência artificial cria obras visuais únicas com base em preferências do usuário.",
+    "date": "2025-06-03",
+    "text": "Sistemas de redes neurais avançadas são capazes de produzir arte digital original ao analisar dados de estilos, cores e temas favoritos dos usuários. Essas obras são criadas em tempo real, podendo ser usadas para decoração, mídia social e até marketing personalizado. Essa tecnologia abre novas possibilidades para a criatividade e a colaboração entre humanos e máquinas."
   },
   {
     "id": 7,
-    "title": "6G promete internet 100x mais rápida",
-    "summary": "Primeiros testes mostram velocidades nunca vistas antes em redes móveis.",
-    "date": "2025-05-29"
-  },
-  {
-    "id": 7,
-    "title": "Startups verdes atraem bilhões em 2025",
-    "summary": "Soluções ecológicas estão ganhando o mercado com força.",
-    "date": "2025-05-28"
+    "title": "Tecnologia vestível monitora saúde mental com precisão",
+    "summary": "Dispositivos detectam sinais precoces de estresse e ansiedade para intervenções rápidas.",
+    "date": "2025-06-01",
+    "text": "Wearables equipados com sensores biométricos e algoritmos de análise emocional monitoram indicadores como frequência cardíaca, respiração e padrões de sono para identificar sintomas iniciais de transtornos mentais. Alertas personalizados ajudam usuários e profissionais de saúde a tomar medidas preventivas, promovendo o bem-estar psicológico em tempo real."
   },
   {
     "id": 8,
-    "title": "Realidade mista revoluciona o ensino",
-    "summary": "Salas de aula imersivas são testadas em universidades brasileiras.",
-    "date": "2025-05-27"
+    "title": "Impressão 3D revoluciona construção civil sustentável",
+    "summary": "Casas impressas com materiais reciclados reduzem custo e impacto ambiental.",
+    "date": "2025-06-02",
+    "text": "A impressão 3D aplicada à construção civil utiliza resíduos plásticos e concretos ecológicos para erguer casas rapidamente e com baixo custo. Além da sustentabilidade, essa técnica permite personalização e adaptações locais que atendem necessidades específicas das comunidades. Projetos em países em desenvolvimento estão beneficiando populações de baixa renda com moradias acessíveis e duráveis."
   },
   {
     "id": 9,
-    "title": "Fusão nuclear mais próxima de se tornar viável",
-    "summary": "Pesquisadores atingem novo marco de eficiência energética.",
-    "date": "2025-05-26"
+    "title": "Nanotecnologia avança no combate a microplásticos nos oceanos",
+    "summary": "Dispositivos minúsculos capturam poluentes e ajudam a limpar ambientes marinhos.",
+    "date": "2025-06-03",
+    "text": "Pesquisadores desenvolveram nanorrobôs capazes de identificar e coletar microplásticos presentes em águas oceânicas. Esses dispositivos, movidos por energia solar e programados para retornar à base, representam uma solução inovadora para o crescente problema da poluição marinha, protegendo a vida aquática e a saúde humana."
   },
   {
     "id": 10,
-    "title": "Fusão nuclear mais próxima de se tornar viável",
-    "summary": "Pesquisadores atingem novo marco de eficiência energética.",
-    "date": "2025-05-26"
+    "title": "Realidade aumentada melhora experiência em eventos esportivos",
+    "summary": "Tecnologia oferece dados e visualizações em tempo real para torcedores em estádios.",
+    "date": "2025-06-01",
+    "text": "Com o uso de óculos de realidade aumentada, espectadores de eventos esportivos recebem estatísticas, ângulos exclusivos e replays diretamente no campo de visão. Essa inovação torna as partidas mais interativas e imersivas, aumentando o engajamento dos fãs e criando novas oportunidades para patrocinadores e organizadores."
   },
   {
     "id": 11,
-    "title": "Fusão nuclear mais próxima de se tornar viável",
-    "summary": "Pesquisadores atingem novo marco de eficiência energética.",
-    "date": "2025-05-26"
+    "title": "Biotecnologia cria tecidos humanos para transplantes personalizados",
+    "summary": "Novos métodos possibilitam crescimento de órgãos sob medida em laboratório.",
+    "date": "2025-06-02",
+    "text": "Laboratórios avançam no cultivo de tecidos humanos a partir de células-tronco, criando órgãos compatíveis geneticamente com pacientes. Essa tecnologia pode reduzir drasticamente a lista de espera por transplantes e evitar rejeições, revolucionando a medicina regenerativa e salvando milhares de vidas."
+  },
+  {
+    "id": 12,
+    "title": "Blockchain aumenta transparência na cadeia de suprimentos alimentares",
+    "summary": "Registro imutável garante origem e qualidade dos produtos para consumidores e empresas.",
+    "date": "2025-06-03",
+    "text": "Empresas do setor alimentício estão implementando blockchain para registrar cada etapa da cadeia de produção, desde a fazenda até o consumidor final. Isso permite rastreabilidade total, garantindo autenticidade, segurança alimentar e combate a fraudes. A tecnologia também ajuda a reduzir desperdícios e melhorar a sustentabilidade do setor."
   }
 ]

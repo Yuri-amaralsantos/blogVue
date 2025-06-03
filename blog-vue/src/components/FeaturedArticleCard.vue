@@ -1,16 +1,17 @@
 <template>
-  <div class="featured-card">
+  <router-link :to="`/article/${id}`" class="featured-card">
     <div class="image-container">
       <img src="/image.png" alt="Article image" class="article-image" />
     </div>
     <div class="text-content">
       <a href="">{{ title }}</a>
     </div>
-  </div>
+  </router-link>
 </template>
 
 <script setup lang="ts">
 defineProps<{
+  id: number,
   title: string
 }>()
 </script>
@@ -26,8 +27,8 @@ defineProps<{
   border-top-right-radius: 1rem;
   font-size: 1.1rem;
   margin-bottom: 0.2rem;
-  margin-left:2rem;
-  margin-right:2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .image-container {
@@ -56,7 +57,7 @@ defineProps<{
   justify-content: center;
 }
 
-.text-content a { 
+.text-content a {
   color: black;
   text-decoration: none;
   font-size: 2rem;

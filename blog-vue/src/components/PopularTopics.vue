@@ -1,7 +1,7 @@
 <template>
   <section class="popular-topics">
-    <h3>Explore by</h3>
-    <h2>POPULAR TOPICS</h2>
+    <h3>Explore por</h3>
+    <h2>TÓPICOS POPULARES</h2>
     <div class="topics">
       <button v-for="(topic, i) in topics" :key="i">
         {{ topic }} →
@@ -12,8 +12,8 @@
 
 <script setup lang="ts">
 const topics = [
-  'Mobile', 'Computing', 'VPN',
-  'Gaming', 'Health', 'Home Entertainment',
+  'Celular', 'Computação', 'VPN',
+  'Jogos', 'Saúde', 'Entretenimento em casa',
   'Streaming'
 ]
 </script>

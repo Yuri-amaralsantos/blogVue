@@ -1,37 +1,37 @@
 <template>
   <nav class="nav">
-    <a href="#">News</a>
+    <a href="#">Notícias</a>
 
     <div class="dropdown">
-      <a href="#">AI</a>
+      <a href="#">IA</a>
       <div class="dropdown-menu">
-        <a href="#">Machine Learning</a>
-        <a href="#">Neural Networks</a>
+        <a href="#">Aprendizado de Máquina</a>
+        <a href="#">Redes Neurais</a>
         <a href="#">Chatbots</a>
       </div>
     </div>
 
     <div class="dropdown">
-      <a href="#">Tech</a>
+      <a href="#">Tecnologia</a>
       <div class="dropdown-menu">
         <a href="#">Gadgets</a>
-        <a href="#">Reviews</a>
+        <a href="#">Avaliações</a>
         <a href="#">Startups</a>
       </div>
     </div>
 
-    <a href="#">Home</a>
-    <a href="#">Entertainment</a>
-    <a href="#">Wellness</a>
-    <a href="#">Cover Stories</a>
+    <a href="#">Casa</a>
+    <a href="#">Entretenimento</a>
+    <a href="#">Bem-estar</a>
+    <a href="#">Reportagens</a>
 
     <div class="dropdown">
-      <a href="#">More</a>
+      <a href="#">Mais</a>
       <div class="dropdown-menu">
-        <a href="#">Science</a>
-        <a href="#">Health</a>
-        <a href="#">Space</a>
-        <a href="#">Gaming</a>
+        <a href="#">Ciência</a>
+        <a href="#">Saúde</a>
+        <a href="#">Espaço</a>
+        <a href="#">Jogos</a>
       </div>
     </div>
   </nav>

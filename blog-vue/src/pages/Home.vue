@@ -5,7 +5,8 @@
     <section class="featured-articles">
 
       <div class="mainArticle">
-        <FeaturedArticleCard :title="articles[0].title" :summary="articles[0].summary" :date="articles[0].date" />
+        <FeaturedArticleCard :id="articles[0].id" :title="articles[0].title" :summary="articles[0].summary"
+          :date="articles[0].date" />
       </div>
 
       <div class="articles-grid">
