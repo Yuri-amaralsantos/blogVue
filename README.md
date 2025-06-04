@@ -40,7 +40,7 @@ cd [NOME_DA_PASTA_DO_PROJETO]
 ## Instale as dependências:
 
 npm install
-# ou
+ou
 yarn install
 
 ## Executando o Servidor de Desenvolvimento
