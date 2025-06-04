@@ -2,7 +2,7 @@
   <footer class="footer">
     <div class="footer-top">
       <div class="branding">
-        <h1 class="logo">TECH</h1>
+        <h1 class="logo">BLOG</h1>
         <span class="subtitle">
           SEU<br />
           ESPAÇO<br />
@@ -22,7 +22,9 @@
 
     <div class="footer-bottom">
       <div class="copyright">
-        © {{ new Date().getFullYear() }} Yuri amaral santos. Todos os direitos reservados.
+        Desenvolvido por <a href="https://yuri-amaral-santos-portfolio.vercel.app" target="_blank" rel="noopener">Yuri
+          Amaral
+          Santos</a>.
       </div>
     </div>
   </footer>
@@ -59,14 +61,14 @@
 .logo {
   font-size: 4rem;
   font-weight: bold;
-  color: red;
+  color: #63e058;
   line-height: 1;
 }
 
 .subtitle {
   font-size: 1rem;
   font-weight: bolder;
-  color: #dc2626;
+  color: #63e058;
   line-height: 1.2;
   white-space: pre-line;
 }
@@ -75,12 +77,12 @@
   display: flex;
   gap: 1rem;
   font-size: 1.5rem;
-  color: #a3e635;
+  color: #63e058;
   align-items: center;
 }
 
 .social-links a {
-  color: #a3e635;
+  color: #63e058;
   transition: color 0.3s;
 }
 
@@ -91,7 +93,18 @@
 .footer-bottom {
   margin-top: 2rem;
   text-align: center;
-  color: #a3e635;
+  color: #63e058;
+}
+
+.footer-bottom a {
+  color: #8ba089;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-bottom a:hover {
+  color: #4ade80;
+  text-decoration: underline;
 }
 
 .copyright {

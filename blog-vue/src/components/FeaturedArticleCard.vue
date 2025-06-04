@@ -20,15 +20,15 @@ defineProps<{
 .featured-card {
   display: flex;
   flex-direction: row;
-  background-color: white;
+  background-color: #1f2937;
   height: 300px;
   overflow: hidden;
   cursor: pointer;
-  border-top-right-radius: 1rem;
   font-size: 1.1rem;
   margin-bottom: 0.2rem;
   margin-left: 2rem;
   margin-right: 2rem;
+  text-decoration: none;
 }
 
 .image-container {
@@ -58,14 +58,19 @@ defineProps<{
 }
 
 .text-content a {
-  color: black;
+  color: white;
   text-decoration: none;
   font-size: 2rem;
   font-weight: bold;
   transition: text-decoration 0.3s ease;
 }
 
+.featured-card:hover {
+  background-color: #63e058;
+}
+
 .featured-card:hover .text-content a {
   text-decoration: underline;
+  color: #1f2937;
 }
 </style>

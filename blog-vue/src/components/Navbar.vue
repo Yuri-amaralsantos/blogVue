@@ -39,6 +39,7 @@
 
 <style scoped>
 .nav {
+  padding-bottom: 1rem;
   position: relative;
   background-color: black;
   display: flex;
@@ -70,7 +71,7 @@
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
-  background-color: white;
+  background-color: rgb(212, 208, 208);
   padding: 10px;
   border-radius: 5px;
   min-width: 150px;

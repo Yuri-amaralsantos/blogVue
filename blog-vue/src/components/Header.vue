@@ -2,13 +2,13 @@
   <header class="header">
     <div class="branding">
       <RouterLink to="/" class="logo-link">
-        <h1 class="logo">TECH</h1>
+        <h1 class="logo">BLOG</h1>
       </RouterLink>
       <span class="subtitle">SEU<br> ESPAÇO <br> PARA A <br>TECNLOGIA </span>
     </div>
 
     <div class="actions">
-      <div class="search-container" v-if="showSearch">
+      <div class="search-container">
         <input v-model="searchQuery" @input="filterResults" @blur="hideDropdown" @focus="showDropdown = true"
           type="text" placeholder="Buscar artigo por título ou categoria" />
         <ul v-if="showDropdown && searchQuery && filteredArticles.length" class="search-dropdown">
@@ -18,11 +18,7 @@
         </ul>
       </div>
 
-      <button :class="['search-button', { active: showSearch }]" @click="toggleSearch">
-        <svg class="icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M11 17a6 6 0 100-12 6 6 0 000 12z" />
-        </svg>
-      </button>
+
 
       <button class="login-button">
         Login
@@ -101,14 +97,14 @@ function hideDropdown() {
 .logo {
   font-size: 5rem;
   font-weight: 800;
-  color: #dc2626;
+  color: #63e058;
 }
 
 .subtitle {
   display: none;
   font-size: 1rem;
   font-weight: bolder;
-  color: #dc2626;
+  color: #63e058;
 }
 
 @media (min-width: 640px) {
@@ -129,14 +125,16 @@ function hideDropdown() {
 }
 
 .search-container input {
-  padding: 6px 10px;
+  padding: 12px 14px;
   border-radius: 4px;
   border: none;
-  width: 220px;
+  width: 400px;
   transition: all 0.2s ease-in-out;
 }
 
 .search-dropdown {
+  list-style-type: none;
+  padding-left: 0;
   position: absolute;
   top: 100%;
   left: 0;
@@ -158,29 +156,12 @@ function hideDropdown() {
 
 .search-dropdown li:hover {
   background-color: #1f2937;
-  color: #ef4444;
+  color: #63e058;
 }
 
-.search-button {
-  background: none;
-  border: 1px solid white;
-  color: white;
-  cursor: pointer;
-  padding: 0.5rem;
-  border-radius: 10px;
-}
 
-.search-button.active {
-  background-color: #4ade80;
-  border-color: #4ade80;
-  color: rgb(70, 67, 67);
-}
 
-.search-button:hover {
-  border-color: #4ade80;
-  background-color: #4ade80;
-  color: rgb(70, 67, 67);
-}
+
 
 .icon {
   width: 1.25rem;
@@ -192,7 +173,7 @@ function hideDropdown() {
 }
 
 .login-button {
-  background-color: #4ade80;
+  background-color: #63e058;
   color: black;
   padding: 0.75rem 1rem;
   border-radius: 0.5rem;
@@ -205,11 +186,7 @@ function hideDropdown() {
 .login-button:hover {
   background-color: #22c55e;
 }
-</style>
 
-
-
-<style scoped>
 .header {
   background-color: black;
   display: flex;
@@ -224,19 +201,6 @@ function hideDropdown() {
   display: flex;
   align-items: center;
   gap: 1rem;
-}
-
-.logo {
-  font-size: 5rem;
-  font-weight: 800;
-  color: #dc2626;
-}
-
-.subtitle {
-  display: none;
-  font-size: 1rem;
-  font-weight: bolder;
-  color: #dc2626;
 }
 
 @media (min-width: 640px) {

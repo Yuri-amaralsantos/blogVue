@@ -26,6 +26,7 @@ defineProps<{
   height: 300px;
   overflow: hidden;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .image-container {
@@ -64,7 +65,7 @@ defineProps<{
 
 .article-card:hover a {
   text-decoration: underline;
-  color: #8b5cf6;
+  color: #63e058;
 }
 
 .date {

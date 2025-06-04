@@ -15,7 +15,9 @@
       </div>
     </section>
 
-    <BestOfTheBest />
+    <hr class="dotted-separator" />
+
+    <NewsLetter />
 
     <hr class="dotted-separator" />
 
@@ -25,7 +27,6 @@
         :summary="article.summary" :date="article.date" />
     </div>
 
-    <PopularTopics />
 
     <hr class="dotted-separator" />
 
@@ -42,8 +43,7 @@ import { computed } from 'vue'
 import { defineProps } from 'vue'
 import ArticleCard from '../components/ArticleCard.vue'
 import FeaturedArticleCard from '../components/FeaturedArticleCard.vue'
-import BestOfTheBest from '../components/BestOfTheBest.vue'
-import PopularTopics from '../components/PopularTopics.vue'
+import NewsLetter from '../components/NewsLetter.vue'
 import PaginatedArticles from '../components/PaginatedArticles.vue'
 import articlesData from '../data/articles.json'
 
@@ -69,7 +69,6 @@ const articles = computed(() => {
 }
 
 .mainArticle {
-  background: black;
   padding-top: 2rem;
 }
 
