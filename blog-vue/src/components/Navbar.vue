@@ -57,7 +57,7 @@
 }
 
 .nav a:hover {
-  color: #ef4444;
+  color: #63e058;
 }
 
 .dropdown {
@@ -87,7 +87,7 @@
 
 .dropdown-menu a:hover {
   background-color: #1f2937;
-  color: #ef4444;
+  color: #63e058;
 }
 
 .dropdown:hover .dropdown-menu {
